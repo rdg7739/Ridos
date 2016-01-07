@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <ImageButton
+        android:id= "@+id/ridoBtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:scaleType="fitXY"
+        android:padding="0dp"
+        android:src="@drawable/background_001_top" />
+
+
+    <ImageButton
+        android:id= "@+id/driverBtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:scaleType="fitXY"
+        android:padding="0dp"
+        android:src="@drawable/background_001_bottom" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:id="@+id/logOutBtn"
+        android:background="#00ffffff"
+        android:textColor="#ffffff"/>
+
+</RelativeLayout>
+
+

@@ -1,29 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:showIn="@layout/activity_main" tools:context=".MainActivity"
+    tools:context=".MainActivity"
     android:background="@drawable/login_001_background">
-
-    <EditText
-        android:layout_width="200dp"
-        android:layout_height="30dp"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:id="@+id/Pswd"
-        android:focusableInTouchMode="false"
-        android:background="@drawable/login_001_button"
-        android:autoText="false"
-        android:layout_marginBottom="192dp"
-        android:hint="Password"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/ID_text"
-        android:layout_alignStart="@+id/ID_text" />
 
     <EditText
         android:layout_width="200dp"
@@ -36,27 +22,58 @@
         android:editable="true"
         android:focusableInTouchMode="true"
         android:hint="ID"
-        android:inputType="text" />
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:focusable="true" />
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/Pswd"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/login_001_button"
+        android:autoText="false"
+        android:layout_marginBottom="192dp"
+        android:hint="Password"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/ID_text"
+        android:layout_alignStart="@+id/ID_text"
+        android:editable="true"
+        android:paddingLeft="10dp" />
+
+
 
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="80dp"
         android:layout_height="30dp"
-        android:id="@+id/button"
-        android:layout_alignTop="@+id/Pswd"
-        android:layout_alignLeft="@+id/Pswd"
-        android:layout_alignStart="@+id/Pswd"
-        android:layout_marginTop="49dp"
-        android:background="@drawable/Login_001_SIGNIN_BUTTON" />
+        android:id="@+id/signUpBtn"
+        android:background="@drawable/login_001_signup_button"
+        android:layout_below="@+id/checkBox"
+        android:layout_alignLeft="@+id/checkBox"
+        android:layout_alignStart="@+id/checkBox"
+        android:layout_marginTop="5dp" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="80dp"
         android:layout_height="30dp"
-        android:id="@+id/button2"
-        android:layout_alignTop="@+id/button"
+        android:id="@+id/signInBtn"
+        android:layout_alignTop="@+id/signUpBtn"
         android:layout_alignRight="@+id/Pswd"
         android:layout_alignEnd="@+id/Pswd"
-        android:background="@drawable/Login_001_SIGNUP_BUTTON" />
+        android:background="@drawable/login_001_signin_butotn" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save ID and password?"
+        android:id="@+id/checkBox"
+        android:layout_alignTop="@+id/Pswd"
+        android:layout_alignLeft="@+id/Pswd"
+        android:layout_marginTop="35dp"
+        android:textColor="#ffffff"
+        android:buttonTint="#ffffff"/>
 
 </RelativeLayout>

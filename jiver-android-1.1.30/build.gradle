@@ -1,0 +1,2 @@
+configurations.create("default")
+artifacts.add("default", file('jiver-android-1.1.30.jar'))

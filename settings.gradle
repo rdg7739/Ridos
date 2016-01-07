@@ -1,1 +1,1 @@
-include ':app'
+include ':app', ':jiver-android-1.1.30', ':android-support-v4', ':json-lib'

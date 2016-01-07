@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Ridos.iml" filepath="$PROJECT_DIR$/Ridos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-support-v4/android-support-v4.iml" filepath="$PROJECT_DIR$/android-support-v4/android-support-v4.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jiver-android-1.1.30/jiver-android-1.1.30.iml" filepath="$PROJECT_DIR$/jiver-android-1.1.30/jiver-android-1.1.30.iml" />
+      <module fileurl="file://$PROJECT_DIR$/json-lib/json-lib.iml" filepath="$PROJECT_DIR$/json-lib/json-lib.iml" />
     </modules>
   </component>
 </project>
