@@ -109,8 +109,6 @@ public class requestRide extends AppCompatActivity implements View.OnClickListen
         ParsePush parsePush = new ParsePush();
         ParseQuery query = ParseInstallation.getQuery();
         ParseQuery userQuery = ParseUser.getQuery();
-        //   userQuery.whereEqualTo("username", "test");
-        //   query.whereMatchesQuery("user",userQuery);
         parsePush.setChannel("RidosApp");
         parsePush.setQuery(query);
         parsePush.setMessage(ParseUser.getCurrentUser().get("name") + str+ " ride for " + serviceStr);
